@@ -22,12 +22,12 @@
 
   <main id="maincontent">
     <section id="map-container">
-      <div id="map"></div>
+      <div role="presentation" aria-hidden="true" id="map"></div>
     </section>
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <div>
+        <div class="row selects">
           <select class="resrev-half" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
             <option value="all">All Neighborhoods</option>
           </select>
@@ -36,8 +36,8 @@
           </select>
         </div>
       </div>
-      <div>
-        <ul id="restaurants-list"></ul>
+      <div class="table">
+        <ul id="restaurants-list" class="row"></ul>
       </div>
     </section>
 

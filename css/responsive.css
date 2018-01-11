@@ -5,13 +5,6 @@ body {
   margin: 0;
 }
 
-* {
-  transition: all 0.25s linear;
-  -o-transition: all 0.25s linear;
-  -moz-transition: all 0.25s linear;
-  -webkit-transition: all 0.25s linear;
-}
-
 *,
 *:before,
 *:after {
@@ -24,6 +17,21 @@ footer {
 
 section {
   overflow: hidden;
+}
+
+.selects {
+  display: inline-flex !important;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.resrev-center {
+  display: inline-block;
+  width: auto;
 }
 
 .resrev-col,

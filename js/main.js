@@ -8,7 +8,9 @@ var markers = [];
 document.addEventListener("DOMContentLoaded", event => {
   fetchNeighborhoods();
   fetchCuisines();
-  serviceWorkerRegister();
+
+  // Add sw.js
+  // serviceWorkerRegister();
 });
 
 serviceWorkerRegister = () => {
@@ -163,14 +165,15 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
  */
 createRestaurantHTML = restaurant => {
   const li = document.createElement("li");
-  li.className = "resrev-quarter";
+  li.className = "resrev-half";
 
   const image = document.createElement("img");
   image.className = "restaurant-img";
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.setAttribute("alt", `Restaurant ${restaurant.name}`);
   li.append(image);
 
-  const name = document.createElement("h1");
+  const name = document.createElement("h2");
   name.innerHTML = restaurant.name;
   li.append(name);
 
