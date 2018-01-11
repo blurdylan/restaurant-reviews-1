@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", event => {
   fetchCuisines();
 
   // Add sw.js
-  // serviceWorkerRegister();
+  serviceWorkerRegister();
 });
 
 serviceWorkerRegister = () => {
