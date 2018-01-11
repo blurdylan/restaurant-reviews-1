@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", event => {
   fetchCuisines();
 
   // Add sw.js
-  serviceWorkerRegister();
+  // ServiceWorkerRegister();
 });
 
 serviceWorkerRegister = () => {
@@ -165,7 +165,7 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
  */
 createRestaurantHTML = restaurant => {
   const li = document.createElement("li");
-  li.className = "resrev-half";
+  li.className = "resrev-quarter";
 
   const image = document.createElement("img");
   image.className = "restaurant-img";

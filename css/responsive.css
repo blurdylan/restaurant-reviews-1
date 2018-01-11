@@ -185,3 +185,80 @@ section {
 footer {
   width: 100%;
 }
+
+@media all and (max-width: 600px) {
+  #restaurant-container,
+  #reviews-container {
+    float: none;
+    width: 100%;
+  }
+  .inside #map-container {
+    background: blue none repeat scroll 0 0;
+    height: 15%;
+    position: relative;
+    top: 4%;
+    width: 100%;
+  }
+  .inside #footer {
+    width: 100%;
+  }
+  .inside header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  #restaurant-container {
+    padding: 0 40px 30px;
+  }
+  #map {
+    position: relative;
+    overflow: hidden;
+  }
+  .inside #map {
+    background-color: #ccc;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  float: none;
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+/**********
+  iPad 3
+  **********/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
